@@ -1,11 +1,14 @@
-# Gereksinim Analizi (CareerPilot)
+## Fonksiyonel Gereksinim Listesi
 
-CareerPilot, kullanıcıların kariyer hedeflerine ulaşmaları için kişiselleştirilmiş bir öğrenme yol haritası sunan ve gelişim süreçlerini takip eden bir backend altyapısına sahiptir. Projenin temel işleyişi şu üç ana gereksinim üzerine kurgulanmıştır:
-
-1. *Kariyer Planlama ve Başlangıç:* Kullanıcıların sisteme dahil olurken sadece kimlik bilgilerini değil, aynı zamanda kariyer hedeflerini (Örn: Python Developer) ve mevcut yetkinliklerini tanımlayabilmesi esastır. Bu sayede sistem, kişiye özel bir "Skill Matrix" ve öğrenme planı oluşturabilmektedir.
-
-2. *Görev Takibi ve Süreç Yönetimi:* Kullanıcının günlük çalışma maddelerini sisteme ekleyebilmesi, bu görevlerin durumlarını (tamamlandı/bekliyor) güncelleyebilmesi ve hatalı girişleri silebilmesi sağlanmalıdır. Dinamik bir yapı ile hedeflenen yetkinliklerin seviyeleri zamanla güncellenerek gelişimin dijital kaydı tutulmaktadır.
-
-3. *Veri Görselleştirme ve Analitik:* Sistemin en kritik parçası, toplanan verilerin kullanıcıya anlamlı raporlar olarak sunulmasıdır. Kullanıcının 3-6 aylık yol haritasının zaman çizelgesi olarak sunulması, günlük ilerleme yüzdesinin hesaplanması ve haftalık performansın grafiklerle gösterilmesi temel analiz gereksinimlerini oluşturmaktadır.
-
-Bu gereksinimler ışığında tasarlanan REST API metotları, kullanıcının gelişim serüvenini başından sonuna kadar dijital olarak yönetmesini hedeflemektedir.
+1. *Kayıt Ol (POST):* Kullanıcının ad, kariyer hedefi (Örn: Python Developer) ve mevcut yetkinliklerini sisteme ilk kez kaydetmesi.
+2. *Giriş Yap (POST):* Daha önce kayıt olan kullanıcının kendi çalışma planına erişim sağlaması.
+3. *Görev Ekle (POST):* Kullanıcının o gün yapacağı yeni bir çalışma maddesini (Örn: "2 saat Flask çalışılacak") listesine eklemesi.
+4. *Hedeflenen Yetkinlikleri Görüntüle (GET):* Kullanıcının hedefine ulaşması için öğrenmesi gereken teknik becerilerin (Skill Matrix) ekranda listelenmesi.
+5. *Yol Haritasını Görüntüle (GET):* Kullanıcının 3 veya 6 aylık planının bir zaman çizelgesi üzerinde görsel olarak sunulması.
+6. *Günlük İlerleme Grafiğini Görüntüle (GET):* Kullanıcının o güne kadar tamamladığı görevlerin hedefe olan yakınlığını yüzde bazında görmesi.
+7. *Haftalık Çalışma Çizelgesini Görüntüle (GET):* Haftanın günlerine göre tamamlanan görevlerin bir grafik üzerinde gösterilmesi.
+8. *Mevcut Yetenek Seviyesini Güncelle (UPDATE):* Kullanıcının öğrendiği yeni bir beceriyi veya değişen yetenek puanını sistemde güncellemesi.
+9. *Görev Durumunu Güncelle (UPDATE):* Bekleyen bir görevin "Tamamlandı" olarak işaretlenerek durumunun değiştirilmesi.
+10. *Tema Ayarını Güncelle (UPDATE):* Uygulama görünümünün dark mode veya aydınlık mod olacak şekilde değiştirilmesi.
+11. *Hatalı Görevi Sil (DELETE):* Yanlışlıkla listeye eklenen veya vazgeçilen bir çalışma maddesinin sistemden kaldırılması.
+12. *Hesabı Sil (DELETE):* Kullanıcının tüm kariyer planlarını ve geçmiş verilerini sistemden tamamen temizlemesi.
