@@ -2,7 +2,7 @@ import axios from "axios";
 
 const API = axios.create({
   // Yerelde test ettiğin için burası doğru ✅
-  baseURL: "http://localhost:5000",
+  baseURL: "https://careerpilot-api-72j7.onrender.com",
 });
 
 // Her istekte token'ı header'a ekle
