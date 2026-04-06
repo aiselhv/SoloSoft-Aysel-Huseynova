@@ -1,6 +1,6 @@
 # CareerPilot Web Frontend Görevleri
 
-**Front-end Test Videosu:** [Link buraya eklenecek](https://example.com)
+**Front-end Test Videosu:** [Link buraya eklenecek](https://careerpilot-frontend-red.vercel.app/login)
 
 ---
 
