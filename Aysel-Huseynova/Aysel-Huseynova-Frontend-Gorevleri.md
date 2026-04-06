@@ -1,6 +1,6 @@
 # Aysel Hüseyinova'nın Frontend Görevleri
 
-**Frontend Demo Videosu:** [Link buraya eklenecek](https://example.com)
+**Frontend Demo Videosu:** [Link buraya eklenecek](https://careerpilot-frontend-red.vercel.app/login)
 
 ## Görevler
 
